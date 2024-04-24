@@ -11677,3 +11677,20 @@ pre {
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
 }
+
+@media all {
+ .desktop {
+ display: flex !important;
+ }
+ .mobile {
+ display: none !important;
+ }
+}
+@media all and (max-width: 575px) {
+ .desktop {
+ display: none  !important;
+ }
+ .mobile {
+ display: flex !important;
+ }
+}
