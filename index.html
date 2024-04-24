@@ -58,9 +58,9 @@
                 </div>      
 
                 <div class="socials mt-4">
-                    <a class="social-item" href="javascript:void(0)"><i class="ti-linkedin"></i></a>
+                    <a class="social-item" href="https://www.linkedin.com/in/patrick-abiney-0393abb0"><i class="ti-linkedin"></i></a>
                     <a class="social-item" href="#contact"><i class="ti-email"></i></a>
-                    <a class="social-item" href="javascript:void(0)"><i class="ti-github"></i></a>
+                    <a class="social-item" href="https://github.com/pabiney"><i class="ti-github"></i></a>
                 </div>
             </div>              
             <div class="img-holder">
@@ -104,7 +104,7 @@
         <div class="container text-center">
             <h6 class="subtitle">Service</h6>
             <h6 class="section-title mb-4">What I Do</h6>
-            <p class="mb-5 pb-4">I specialize in software engineering, game development, AI design, & management.<br>I've worked on projects from concept through release, after release, & taken existing projects to the finish line.</p>
+            <p class="mb-5 pb-4">I specialize in software engineering, game development, AI design, & management.<br>I've worked on projects, large & small, from concept through & after release, as well as taken existing projects to the finish line.</p>
 
             <div class="row">
                 <div class="col-sm-6 col-md-3 mb-4">
@@ -177,7 +177,7 @@
         <div class="container text-center">
             <h6 class="subtitle">Skills</h6>
             <h6 class="section-title mb-4">Why Choose me</h6>
-            <p class="mb-5 pb-4">I would describe myself as humble & hardworking with a diverse skill set that is platform & engine agnostic.<br>I have a proven track record of releases on VR, mobile, PS4, PS5, Switch, Steam, Epic, XBOX One, & XBOX Series X & S.</p>
+            <p class="mb-5 pb-4">I would describe myself as humble & hardworking with a diverse skill set that is platform & engine agnostic.<br>I have several releases on platforms including VR, mobile, PS4, PS5, Switch, Steam, Epic, XBOX One, & XBOX Series X & S.</p>
 
             <div class="row text-left">
                 <div class="col-sm-6">
@@ -221,6 +221,7 @@
             <h6 class="section-title mb-4">Check Out The Things I Worked On</h6>
             <p class="mb-5 pb-4">Explore my work & discover how my expertise can elevate your next project.</p>
 
+			<!-- desktop -->
             <div class="row desktop">
                 <div class="col-sm-4">
                     <div class="img-wrapper">
@@ -280,7 +281,7 @@
                 </div>
             </div>
 
-
+			<!-- mobile -->
 			<div class="row mobile">
                 <div class="col-sm-4">
                     <div class="img-wrapper">
@@ -431,9 +432,9 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="socials">
-                        <a class="social-item" href="javascript:void(0)"><i class="ti-linkedin"></i></a>
+                        <a class="social-item" href="https://www.linkedin.com/in/patrick-abiney-0393abb0"><i class="ti-linkedin"></i></a>
                         <a class="social-item" href="#contact"><i class="ti-email"></i></a>
-                        <a class="social-item" href="javascript:void(0)"><i class="ti-github"></i></a>
+                        <a class="social-item" href="https://github.com/pabiney"><i class="ti-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -450,42 +451,42 @@
     <!-- steller js -->
     <script src="assets/js/steller.js"></script>
 	<script>
-	var coll = document.getElementsByClassName("skills-collapsible");
-	var i;
-	for (i = 0; i < coll.length; i++) {
-	coll[i].addEventListener("click", function() {
-		this.firstChild.classList.toggle("ti-plus");
-		this.firstChild.classList.toggle("ti-minus");
-		var content = this.parentElement.previousElementSibling;
-		if (content.style.maxHeight){
-			content.style.maxHeight = null;
-		} else {
-			content.style.maxHeight = content.scrollHeight + "px";
-		}
-	});
-	}	
-	
-	coll = document.getElementsByClassName("services-collapsible");
-	for (i = 0; i < coll.length; i++) {
-	coll[i].addEventListener("click", function() {
-		var coll = document.getElementsByClassName("services-collapsible-content");
-		var j;
-		var childNodes = document.getElementsByClassName("services-collapsible");
-		for (j = 0; j < coll.length; j++)
-		{
-			var content = coll[j];
-			if (childNodes[j] != this){
-				content.style.maxHeight = null;
-			} else {
+		var coll = document.getElementsByClassName("skills-collapsible");
+		var i;
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				this.firstChild.classList.toggle("ti-plus");
+				this.firstChild.classList.toggle("ti-minus");
+				var content = this.parentElement.previousElementSibling;
 				if (content.style.maxHeight){
 					content.style.maxHeight = null;
 				} else {
 					content.style.maxHeight = content.scrollHeight + "px";
 				}
-			}
-		}
-	});
-	}	
+			});
+		}	
+		
+		coll = document.getElementsByClassName("services-collapsible");
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				var coll = document.getElementsByClassName("services-collapsible-content");
+				var j;
+				var childNodes = document.getElementsByClassName("services-collapsible");
+				for (j = 0; j < coll.length; j++)
+				{
+					var content = coll[j];
+					if (childNodes[j] != this){
+						content.style.maxHeight = null;
+					} else {
+						if (content.style.maxHeight){
+							content.style.maxHeight = null;
+						} else {
+							content.style.maxHeight = content.scrollHeight + "px";
+						}
+					}
+				}
+			});
+		}	
 	</script>
 </body>
 </html>
